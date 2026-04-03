@@ -1,0 +1,13 @@
+{
+  "name": "bark-and-bubbles",
+  "version": "1.0.0",
+  "description": "Bark and Bubbles by Ellie — 1-to-1 dog grooming in Felinfoel, Llanelli",
+  "type": "module",
+  "scripts": {
+    "dev": "node serve.mjs",
+    "screenshot": "node screenshot.mjs http://localhost:3000"
+  },
+  "dependencies": {
+    "puppeteer": "^24.40.0"
+  }
+}
