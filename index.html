@@ -92,16 +92,16 @@
       transform: translateX(0);
     }
 
-    /* Hero paw texture */
+    /* Hero soft radial glow */
     #hero::before {
       content: '';
       position: absolute;
       inset: 0;
       pointer-events: none;
-      opacity: 0.035;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='%235C3D2E'%3E%3Cellipse cx='30' cy='38' rx='8' ry='10'/%3E%3Cellipse cx='18' cy='24' rx='5' ry='6'/%3E%3Cellipse cx='42' cy='24' rx='5' ry='6'/%3E%3Cellipse cx='22' cy='14' rx='4' ry='5'/%3E%3Cellipse cx='38' cy='14' rx='4' ry='5'/%3E%3C/g%3E%3C/svg%3E");
-      background-repeat: repeat;
-      background-size: 80px;
+      background:
+        radial-gradient(ellipse 600px 500px at 20% 30%, rgba(232, 169, 154, 0.07), transparent),
+        radial-gradient(ellipse 500px 400px at 75% 60%, rgba(245, 213, 204, 0.08), transparent),
+        radial-gradient(ellipse 400px 350px at 50% 80%, rgba(232, 169, 154, 0.05), transparent);
     }
 
     /* Testimonial quote mark */
@@ -253,6 +253,7 @@
           <div class="fade-up fade-up-delay-1">
             <span class="font-body text-rose text-xs font-medium uppercase tracking-widest">About</span>
             <h2 class="font-heading text-brown text-3xl md:text-4xl font-bold mt-2 mb-5">Meet Ellie</h2>
+            <!-- [REPLACE WITH REAL BIO] — Swap the placeholder paragraphs below with Ellie's actual bio -->
             <p class="text-espresso/80 leading-relaxed mb-4">
               Hi, I'm Ellie! I'm a qualified dog groomer based in Felinfoel, Llanelli, and I absolutely love what I do. Every dog that comes through my door gets my full, undivided attention — it's always just me and your pup, one at a time.
             </p>
@@ -278,7 +279,7 @@
             <span class="text-3xl block mb-4">✂️</span>
             <h3 class="font-heading text-brown text-xl font-semibold mb-2">Full Groom</h3>
             <p class="text-espresso/80 text-sm leading-relaxed mb-3">A complete pamper from nose to tail. Bath, dry, full haircut, nail trim, ear clean, and finishing spritz.</p>
-            <p class="text-rose text-xs font-medium">Message for prices</p>
+            <a href="#contact" class="text-rose text-xs font-medium hover:text-brown underline decoration-dusty underline-offset-2 transition-colors duration-200">Message for prices</a>
           </div>
 
           <!-- Bath & Tidy -->
@@ -286,7 +287,7 @@
             <span class="text-3xl block mb-4">🛁</span>
             <h3 class="font-heading text-brown text-xl font-semibold mb-2">Bath & Tidy</h3>
             <p class="text-espresso/80 text-sm leading-relaxed mb-3">A thorough wash, blow-dry, and tidy up. Perfect for dogs who don't need a full cut but deserve a freshen up.</p>
-            <p class="text-rose text-xs font-medium">Message for prices</p>
+            <a href="#contact" class="text-rose text-xs font-medium hover:text-brown underline decoration-dusty underline-offset-2 transition-colors duration-200">Message for prices</a>
           </div>
 
           <!-- Puppy's First Groom -->
@@ -294,7 +295,7 @@
             <span class="text-3xl block mb-4">🐾</span>
             <h3 class="font-heading text-brown text-xl font-semibold mb-2">Puppy's First Groom</h3>
             <p class="text-espresso/80 text-sm leading-relaxed mb-3">A gentle, calm introduction to grooming for your little one. Building trust and positive associations from the start.</p>
-            <p class="text-rose text-xs font-medium">Message for prices</p>
+            <a href="#contact" class="text-rose text-xs font-medium hover:text-brown underline decoration-dusty underline-offset-2 transition-colors duration-200">Message for prices</a>
           </div>
 
           <!-- Nail Trim -->
@@ -302,7 +303,7 @@
             <span class="text-3xl block mb-4">✨</span>
             <h3 class="font-heading text-brown text-xl font-semibold mb-2">Nail Trim</h3>
             <p class="text-espresso/80 text-sm leading-relaxed mb-3">Quick and stress-free nail trimming. Walk-ins welcome — just drop Ellie a message.</p>
-            <p class="text-rose text-xs font-medium">Message for prices</p>
+            <a href="#contact" class="text-rose text-xs font-medium hover:text-brown underline decoration-dusty underline-offset-2 transition-colors duration-200">Message for prices</a>
           </div>
         </div>
       </div>
